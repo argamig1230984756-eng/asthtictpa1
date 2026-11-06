@@ -1,0 +1,66 @@
+# ========================================================
+#            AESTHETIC TPA - MESSAGES
+# ========================================================
+# Palette: Lavender #C4B5FD, Soft White #E0E7FF, Mint #4ADE80, Rose #F87171, Muted #94A3B8, Dark #64748B
+
+prefix: "&#C4B5FD&#E0E7FF TPA &#64748B» "
+
+# General Messages (prefix is prepended automatically)
+no-permission: "&#F87171You don't have permission to do this."
+player-only: "&#F87171Only players can use this command."
+player-not-found: "&#F87171Player &#C4B5FD%player% &#F87171is not online."
+cannot-teleport-self: "&#F87171You cannot teleport to yourself."
+already-pending: "&#94A3B8Already have a pending request to &#C4B5FD%player%&#94A3B8."
+no-pending-requests: "&#94A3B8No pending requests."
+no-outgoing-requests: "&#94A3B8No outgoing requests to cancel."
+multiple-requests: "&#94A3B8Multiple requests found, opening menu..."
+config-reloaded: "&#4ADE80Config reloaded. &#64748B(by &#C4B5FDChota_Paglu&#64748B)"
+
+# Request Sending (chat line + clickable button)
+tpa:
+  sent: "&#94A3B8Request sent to &#C4B5FD%player%&#94A3B8. "
+  cancel-btn: "&#64748B[&#F87171Cancel&#64748B]"
+  cancel-hover: "&#F87171Cancel this request"
+  received: "&#C4B5FD%player% &#94A3B8wants to teleport to you. "
+  review-btn: "&#64748B[&#4ADE80Review&#64748B]"
+  review-hover: "&#4ADE80Click to open decision menu"
+
+tpahere:
+  sent: "&#94A3B8TPA-here request sent to &#C4B5FD%player%&#94A3B8. "
+  cancel-btn: "&#64748B[&#F87171Cancel&#64748B]"
+  cancel-hover: "&#F87171Cancel this request"
+  received: "&#C4B5FD%player% &#94A3B8wants you to teleport to them. "
+  review-btn: "&#64748B[&#4ADE80Review&#64748B]"
+  review-hover: "&#4ADE80Click to open decision menu"
+
+# Action Feedback
+request-accepted-sender: "&#4ADE80%player% accepted your request."
+request-accepted-target: "&#4ADE80Request accepted."
+request-denied-sender: "&#F87171%player% declined your request."
+request-denied-target: "&#94A3B8Request declined."
+request-cancelled-sender: "&#94A3B8Request to %player% cancelled."
+request-cancelled-target: "&#94A3B8%player% cancelled their request."
+request-expired-sender: "&#64748BRequest to %player% expired."
+request-expired-target: "&#64748BRequest from %player% expired."
+
+# Warmup
+warmup:
+  action-bar: "&#C4B5FDTeleporting in &#FDE047%seconds%s &#64748B— stay still"
+  title: "&#C4B5FD%seconds%"
+  subtitle: "&#64748BDon't move or take damage"
+  cancelled-move: "&#F87171Teleport cancelled — you moved."
+  cancelled-damage: "&#F87171Teleport cancelled — you took damage."
+  teleported: "&#4ADE80Teleported."
+
+# Toggles
+toggle:
+  tpa-enabled: "&#4ADE80TPA requests enabled."
+  tpa-disabled: "&#F87171TPA requests disabled."
+  tpahere-enabled: "&#4ADE80TPA-here requests enabled."
+  tpahere-disabled: "&#F87171TPA-here requests disabled."
+  target-tpa-disabled: "&#F87171%player% has TPA requests disabled."
+  target-tpahere-disabled: "&#F87171%player% has TPA-here requests disabled."
+
+# Animations
+animation-equipped: "&#4ADE80Equipped &#C4B5FD%animation% &#4ADE80teleport animation."
+animation-locked: "&#F87171Locked! Requires permission: &#64748B%permission%"

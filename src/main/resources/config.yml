@@ -1,0 +1,110 @@
+# ========================================================
+#            AESTHETIC TPA - CONFIGURATION
+# ========================================================
+
+# Teleport Warmup Settings
+warmup:
+  time-seconds: 3
+  cancel-on-move: true
+  block-movement-only: true
+  cancel-on-damage: true
+  show-action-bar: true
+  show-title: false
+  spawn-particles: true
+
+# Request Expiration Settings
+request:
+  timeout-seconds: 60
+  cleanup-interval-seconds: 5
+
+# Safe Teleport Settings
+safety:
+  safe-teleport: true
+
+# Sound Effects
+sounds:
+  enabled: true
+  request-sent: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  request-received: "BLOCK_NOTE_BLOCK_CHIME"
+  countdown-tick: "BLOCK_NOTE_BLOCK_HAT"
+  teleport-success: "ENTITY_ENDERMAN_TELEPORT"
+  teleport-cancelled: "ENTITY_VILLAGER_NO"
+  request-denied: "BLOCK_NOTE_BLOCK_BASS"
+  gui-click: "UI_BUTTON_CLICK"
+  toggle-setting: "BLOCK_NOTE_BLOCK_PLING"
+
+# Default Player Preferences
+defaults:
+  tpa-enabled: true
+  tpahere-enabled: true
+
+# GUI Configuration
+gui:
+  main-menu:
+    title: "&#C4B5FDTeleport Menu"
+    size: 27
+  decision-menu:
+    title: "&#C4B5FDTeleport Request"
+    size: 27
+  requests-menu:
+    title: "&#C4B5FDPending Requests"
+    size: 27
+  players-menu:
+    title: "&#C4B5FDOnline Players"
+    size: 36
+
+# ========================================================
+#   TELEPORT ANIMATION SETTINGS (warmup animations)
+# ========================================================
+# offset.x/y/z  = moves the whole animation relative to the player (blocks)
+# radius        = how far from the player the animation circles
+# speed         = rotation speed (higher = faster)
+# size          = model size multiplier (1.0 = normal). Needs Minecraft 1.20.5+
+# sounds/particles = turn the warmup sounds / particles on or off
+# Use /tpareload to apply changes.
+animations:
+  dragon:
+    radius: 2.5          # flies in a small circle around you (2-3 blocks)
+    height: 1.5          # height above the player's feet
+    height-wave: 0.4     # up/down bobbing while flying (0 = flat)
+    speed: 0.12          # circling speed
+    clockwise: false     # fly clockwise instead of counter-clockwise
+    size: 0.35           # dragon model size (1.0 = full size, needs 1.20.5+)
+    yaw-offset: 180      # rotates the dragon model. If it flies backwards/sideways try 0, 90 or -90
+    offset: {x: 0.0, y: 0.0, z: 0.0}
+    sounds: true
+    particles: true
+  wolf:
+    count: 2             # number of spirit wolves (1-8)
+    radius: 1.3
+    speed: 0.25
+    size: 1.0            # needs 1.20.5+
+    offset: {x: 0.0, y: 0.0, z: 0.0}
+    sounds: true
+    particles: true
+  phoenix:
+    radius: 0.9
+    height: 2.2          # how high the flames rise before looping
+    speed: 0.35
+    rise-speed: 0.1
+    offset: {x: 0.0, y: 0.0, z: 0.0}
+    sounds: true
+    particles: true
+  angel:
+    wings-size: 1.0      # wing size multiplier
+    wings-height: 1.25   # wing height above the player's feet
+    flap-speed: 0.4
+    flap-amount: 0.35
+    halo-radius: 0.45
+    halo-height: 2.25
+    halo-speed: 0.3
+    offset: {x: 0.0, y: 0.0, z: 0.0}
+    sounds: true
+    particles: true
+  portal:
+    radius: 0.85
+    height: 2.1
+    speed: 0.35
+    rise-speed: 0.08
+    offset: {x: 0.0, y: 0.0, z: 0.0}
+    particles: true

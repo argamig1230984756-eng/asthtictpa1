@@ -1,0 +1,85 @@
+name: AestheticTPA
+version: '1.0.0'
+main: com.aesthetic.tpa.AestheticTPA
+api-version: '1.20'
+author: Chota_Paglu
+description: Aesthetic, modern teleportation request plugin made by Chota_Paglu with animations, Bedrock support, interactive GUIs, and warmups.
+
+commands:
+  tpa:
+    description: Send a teleport request to a player or open GUI
+    usage: /tpa <player|gui>
+    aliases: [teleportask]
+    permission: aesthetictpa.use
+  tpahere:
+    description: Request a player to teleport to your location
+    usage: /tpahere <player>
+    permission: aesthetictpa.tpahere
+  tpaccept:
+    description: Accept an incoming teleport request
+    usage: /tpaccept [player]
+    aliases: [tpyes]
+    permission: aesthetictpa.use
+  tpadeny:
+    description: Deny an incoming teleport request
+    usage: /tpadeny [player]
+    aliases: [tpno]
+    permission: aesthetictpa.use
+  tpacancel:
+    description: Cancel your sent teleport request
+    usage: /tpacancel [player]
+    permission: aesthetictpa.use
+  tpatoggle:
+    description: Toggle receiving /tpa requests
+    usage: /tpatoggle
+    permission: aesthetictpa.use
+  tpaheretoggle:
+    description: Toggle receiving /tpahere requests
+    usage: /tpaheretoggle
+    permission: aesthetictpa.use
+  tpamenu:
+    description: Open the Aesthetic TPA interactive GUI
+    usage: /tpamenu
+    aliases: [tpagui, tpaadmin]
+    permission: aesthetictpa.use
+  tpareload:
+    description: Reload AestheticTPA configuration files
+    usage: /tpareload
+    permission: aesthetictpa.admin
+
+permissions:
+  aesthetictpa.use:
+    description: Allows using core TPA commands (/tpa, /tpaccept, /tpadeny, /tpacancel, /tpatoggle, /tpamenu)
+    default: true
+  aesthetictpa.tpahere:
+    description: Allows requesting players to teleport to you (/tpahere, /tpaheretoggle)
+    default: true
+  aesthetictpa.bypass.warmup:
+    description: Instantly teleports without waiting for the warmup countdown
+    default: op
+  aesthetictpa.bypass.toggle:
+    description: Allows sending teleport requests even if the target has toggled requests off
+    default: op
+  aesthetictpa.admin:
+    description: Access to administrative commands like /tpareload
+    default: op
+
+  # Teleport Animations Permissions
+  aesthetictpa.animation.portal:
+    description: Access to default Portal teleport animation
+    default: true
+  aesthetictpa.animation.dragon:
+    description: Access to Ender Dragon teleport animation
+    default: op
+  aesthetictpa.animation.wolf:
+    description: Access to Wolf Pack teleport animation
+    default: op
+  aesthetictpa.animation.phoenix:
+    description: Access to Phoenix Flame teleport animation
+    default: op
+  aesthetictpa.animation.angel:
+    description: Access to Celestial Angel teleport animation
+    default: op
+  aesthetictpa.animation.*:
+    description: Access to all teleport animations
+    default: op
